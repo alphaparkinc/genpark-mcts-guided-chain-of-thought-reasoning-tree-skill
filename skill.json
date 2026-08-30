@@ -1,0 +1,38 @@
+{
+  "name": "genpark-mcts-guided-chain-of-thought-reasoning-tree-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Monte Carlo Tree Search guided chain-of-thought reasoner exploring self-verifying algorithmic solutions with backtracking.",
+  "author": "genpark",
+  "category": "frontier-reasoning",
+  "tags": [
+    "mcts-reasoning",
+    "chain-of-thought",
+    "o1-reasoning",
+    "self-verification",
+    "tree-search"
+  ],
+  "inputs": {
+    "complex_problem_statement": {
+      "type": "string"
+    },
+    "exploration_budget_rollouts": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "reasoning_session_id": {
+      "type": "string"
+    },
+    "mcts_tree_depth_reached": {
+      "type": "integer"
+    },
+    "self_verification_confidence_pct": {
+      "type": "number"
+    },
+    "reasoning_graph_trace_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
